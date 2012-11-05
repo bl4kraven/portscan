@@ -1,0 +1,6 @@
+[submodule "lib-linux"]
+	path = lib-linux
+	url = git@github.com:lbzhung/lib-linux.git
+[submodule "SimpleNet"]
+	path = SimpleNet
+	url = git@github.com:lbzhung/SimpleNet.git
