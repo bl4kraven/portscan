@@ -22,6 +22,7 @@ class ScanSession:public ISession
         {
             cout<<get_peer_addr().get_port()<<" Opened"<<endl;
             //TRACE("Current session num: %d", pSessionManager->GetSessionCount());
+            TRACE("local port:%d", get_local_addr().get_port());
             pSessionManager->Delete(this);
         }
 
@@ -42,7 +43,7 @@ class ScanSession:public ISession
 int main(int argc, const char *argv[])
 {
     // linux默认每个进程文件描述符为1024个
-    int nMaxfd = 500;
+    int nMaxfd = 1000;
     int nPortBegin = 0;
     int nPortEnd = 0;
     int nPortCurrent = 0;
